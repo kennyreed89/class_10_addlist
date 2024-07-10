@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addList</title></head
+  ><link
+    rel="stylesheet"
+    href="node_modules/bootstrap/dist/css/bootstrap.css"
+  />
+  <body class="container">
+    <br /><br />
+    <label for="card"><h3>Accomplish It!</h3></label>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-start-date"><b>Start Date</b></label>
+              <input type="Date" class="form-conrtol" id="new-start-date" />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-end-date"><b>End Date</b></label>
+              <input type="Date" class="form-conrtol" id="new-end-date" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="span">
+            <div class="form-group">
+              <label for="task"><b>I will</b></label>
+              <input
+                type="text"
+                class="form-conrtol"
+                id="new-task"
+                placeholder="Accomplish this!"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <br />
+          <button id="add" class="btn btn-primary form-control">
+            Get It Done!
+          </button>
+        </div>
+      </div>
+    </div>
+    <table id="list" class="table table-dark table-striped">
+      <tr>
+        <th>To do</th>
+        <th>Date Created</th>
+        <th>Start Date</th>
+        <th>Due Date</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+
+    <script src="to_do.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
